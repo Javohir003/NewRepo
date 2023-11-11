@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: red;
+    .Parent{
+        max-width: 1500px;
+        margin: auto;
+        background-color: green;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .Parents{
+            text-align: center;
+            width: 40%;
+            margin: auto;
+            height: max-content;
+            .todo{
+                padding: 20px 0px;
+                background-color: yellow;
+                margin-bottom: 30px;
+                border-radius: 5px;
+            }
+        }
+        .btn{
+            padding: 15px 60px;
+            border-radius: 6px;
+            border: 0;
+            cursor: pointer;
+            margin-bottom: 20px;
+            background-color: blue;
+            color: white;
+            font-size: 20px;
+            font-weight: 700;
+            transition: 0.4s;
+            &:hover{
+                background-color: rgb(124, 124, 255);
+            }
+        }
+    }
+}
